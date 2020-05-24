@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(248, 242, 234);
+    position: relative;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.displayphoto {
+    height: 105px;
+    width: 135px;
+}
+
+#text {
+    color: blue;
+    font-family: fantasy;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-nav li {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1px;
+}
+
+.navbar-nav li:active {
+    font-weight: bolder;
+}
+
+.navbar-nav li:hover {
+    font-weight: bold;
+    /* transform: scale(1.1); */
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+    /*Ensures it dos not stick on clicking*/
+    pointer-events: none;
+}
+
+.scrollIndicatorHeader {
+    width: 100%;
+    background-color: #cfcfcf;
+}
+
+.progress-container {
+    width: 100%;
+    height: 5px;
+    background: rgb(185, 184, 184);
+}
+
+.progress-bar {
+    height: 5px;
+    background: #4ba14e;
+    width: 0%;
+}
+
+.welcome-hr {
+    border: 5px solid black;
+    width: 50%;
+}
+
+.wellText {
+    font-size: 45px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.para1 {
+    font-weight: normal;
+}
+
+.textInParagraph {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.paragraphInProjects {
+    margin-left: 5px;
+}
+
+.card-img-top {
+    width: 150px;
+    height: 175px;
+}
+
+.github {
+    width: 160px;
+    height: 245px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.tableOne {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 6px;
+}
+
+table.tableOne th {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 6px;
+}
+
+table.tableOne td {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 6px;
+}
+
+
+/* For my stripped table */
+
+table.tableOne tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+table.tableOne th {
+    background-color: #5bc0de;
+}
+
+table.tableOne li {
+    padding: 15px;
+}
+
+.social-media img {
+    width: 55px;
+    height: 55px;
+}
+
+.captions {
+    font-weight: bold;
+    -webkit-text-fill-color: bisque;
+}
+
+.gif-titles {
+    text-decoration: overline;
+}
+
+.jumbotronbg {
+    background-color: darkslategrey;
+}
+
+.jumbotron-text {
+    font-family: fantasy sans-serif Arial, Helvetica, sans-serif;
+    font-style: bold italic;
+    text-decoration: line-through;
+}
+
+.footer-subtopics {
+    margin-left: 20px;
+}
+
+.card_one {
+    height: 200px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card_two {
+    height: 200px;
+    width: 350px;
+    background-color: orange;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.email img {
+    height: 55px;
+    width: 55px;
+}
+
+table.tableTwo {
+    padding: 1px;
+}
+
+table.tableTwo td {
+    padding: 3px;
+}
+
+.textFieldBg {
+    background-color: rgb(228, 228, 228);
+}
+
+.copybutton {
+    background-color: rgb(250, 250, 250);
+}

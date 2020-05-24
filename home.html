@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Xavier</title>
+    <!--    for local use-->
+    <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/customized.css"> -->
+
+    <!--    web use-->
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- Local css file -->
+    <link rel="stylesheet" type="text/css" href="css/customized.css">
+
+
+    <!-- Customm Scroll bar on the web page -->
+    <style>
+         ::-webkit-scrollbar {
+            width: 5px;
+        }
+        
+         ::-webkit-scrollbar-thumb {
+            background: #5c5f61;
+        }
+        
+         ::-webkit-scrollbar-track {
+            background: #f8f8f8;
+        }
+        
+         ::-webkit-scrollbar-thumb:hover {
+            background: rgb(87, 83, 83);
+        }
+    </style>
+
+</head>
+
+<!-- Scrollable area for scrollspy -Bootstrap- -->
+
+<body data-spy="scroll" data-target=".navbar" data-offset="10">
+
+    <!-- My Javascript document -->
+
+    <script>
+        alert("Hello and Welcome!!!");
+        /* Function for indicator scroll bar */
+        window.onscroll = function() {
+            scrollIndicatorFunction();
+        }
+
+        function scrollIndicatorFunction() {
+            var windowscroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (windowscroll / height) * 100;
+            document.getElementById("scrollIndicator").style.width = scrolled + "%";
+        }
+
+        /*Function for copying texts from text fields from the "Connect with me cards" */
+        function CopyGmailAdrress() {
+            var copyGmailText = document.getElementById("copyGmailAddress");
+            //selecting the text field for mobile devices
+            copyGmailText.select();
+            copyGmailText.setSelectionRange(0, 999);
+
+            /*Capturing the text inside the text field */
+            document.execCommand("copy");
+
+            /*Giving the user alert of the copied text */
+            alert("Copied: " + copyGmailText.value + " to clipboard");
+            //text to be dislpayed in a tooltip
+        }
+
+        function copyHotMailText() {
+            var copyText = document.getElementById("hotmailaddrress");
+            copyText.select();
+            copyText.setSelectionRange(0, 999);
+
+            document.execCommand("copy");
+
+            alert("Copied: " + copyText.value + " to clipboard");
+        }
+    </script>
+
+
+    <div class="row">
+        <div class="col-md-4">
+            <a class="nav-link" href="#"><img class="displayphoto" src="images/IMG_20200308_162447.jpg"></a>
+        </div>
+        <div class="col-md-4">
+            <p></p>
+        </div>
+        <div class="col-md-4 welcome">
+            <h2>Xavier Francis Oduor</h2>
+            <p>Tech Enthusiast</p>
+            <hr>
+        </div>
+    </div>
+    <div class="jumbotron" style="margin-bottom: 0px" id="text">
+        <h3>Lets Talk!</h3>
+    </div>
+    <!-- bg-primary,bg-success,bg-warning,bg-info,bg-danger,bg-secondary -->
+    <!--        Collapseable navbar-->
+    <nav class="navbar navbar-expand-md navbar-light bg-info sticky-top">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navigationLinks">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="navigationLinks">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#WhoAmI">Home</a>
+                </li>
+                <!-- Drop down menu -->
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class=" nav-link dropdown-toggle" data-toggle="dropdown" href="#Education">
+                                    Education
+                                </a>
+                        <!-- dropdown items -->
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#Journey">Journey</a>
+                            <a class="dropdown-item" href="#Projects">Projects</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Extras">Extras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Career">Career</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Family">Family</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    <nav class="navbar navbar-expand-md navbar-dark bg-info sticky-top">
+        <!-- Scroll Indicator -->
+        <div class="scrollIndicatorHeader">
+            <div class="progress-container">
+                <div class="progress-bar" id="scrollIndicator">
+                    <!-- Blank scroll indicator -->
+                </div>
+            </div>
+        </div>
+        <!-- Scroll Indicator -->
+    </nav>
+    <br>
+    <!--        First topic --Home (Who am i) -->
+    <div id="WhoAmI">
+        <div class="row text-center">
+            <div class="col-12">
+                <a name="WhoAmI">
+                    <h2 class="title">Who Am I?</h2>
+                </a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <br>
+    <div class="row">
+        <div class="col-md-4">
+            <p class="para1 textInParagraph" style="margin-left:8px;"> <b class="wellText">W</b>ell, this question erupts different thoughts in my mind and gives a whole new point of view [~perspective]; to my life each time I think of it. In brief, the best perspective that I like using and that which outweighs
+                the others is that I am an enthusiast of technology and a problem solver. With our daily lives and the world consequently being revolutionized by technology, I have always had that burning desire to be part of the revolution.</p>
+
+            <p class="para2 textInParagraph" style="margin-left:8px;"> <b>C</b>ome to think of it, with technology changing every aspect of our lives from the way we pay bills, transfer money, communicate, travel(space exploration) and even how we Date just to mention a few; one can only wonder at the extent
+                of technology and what it can do to humanity. As technology continues to grow it is important to remain "afloat" by getting up to date with the relevant information to remain relevant in this competitive world; as Alan Kay(a Computer Scientist)
+                once said: "Technology is anything that wasn't around when you were born". </p>
+        </div>
+        <div class="col-md-4">
+            <!--Carousel-->
+            <div class="carousel slide" id="slides" data-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-target="#slides" data-slide-to="0" class="active"></li>
+                    <li data-target="#slides" data-slide-to="1"></li>
+                    <li data-target="#slides" data-slide-to="2"></li>
+                    <li data-target="#slides" data-slide-to="3"></li>
+                </ul>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img src="images/photo1.jpg" id="photos1">
+                        <div class="carousel-caption">
+                            <h6 class="captions">@Developers Festival Eldoret</h6>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/photo3.jpg" id="photos2">
+                        <div class="carousel-caption">
+                            <h6 class="captions">@Developers Festival Eldoret</h6>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/photo4.jpg" id="photos3">
+                        <div class="carousel-caption">
+                            <h6 class="captions">@Njoro Caves</h6>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/photo5.jpg" id="photos4">
+                        <div class="carousel-caption">
+                            <h6 class="captions">@Egerton Pavillion</h6>
+                        </div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#slides" role="button" data-slide="prev">
+                    <span class="icon-prev" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#slides" role="button" data-slide="next">
+                    <span class="icon-next" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <p class="para3 textInParagraph" style="margin-left:8px;"><b>T</b>echnological advancement has seen various sectors of our economy gradually growing and increasing in diversity. For instance, our education system has benefited from online learning which has impacted learners with extra knowledge
+                they could not acquire from their classrooms. It is this growth and diversity in different sectors of an economy that has seen some nations develop into Super Powers. Technology has also come with its cons from internet addictions which
+                has lead to time wastage and destruction from work, air, and water pollution from factories, Cyber thefts among others. </p>
+            <p class="para4 textInParagraph" style="margin-left:8px;"><b>S</b>ince arguably the prons in technology outweigh the cons, technology is here to stay and it will undoubtedly continue to grow and revolutionize humanity from time to time. It is therefor the high time we embrace technology and use it
+                to our advantage. </p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!--        Second topic  --Education-- -->
+    <hr>
+    <div id="Education">
+
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <a name="Education">
+                    <h2 class="title">Education</h2>
+                </a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="paragraph" style="margin-left:8px;">
+        <b class="wellText">C</b>urrently(2020) am a third year student in Egerton University (Njoro) pursuing Bsc.Computer Science.Education for me has not been that difficult owing to my very dedicated parents who have always been there to support me
+        in every step of the journey.I largely owe my Education success to my friends who have always been my Mentors,since through observing,questioning and copying them i have grown to be better than who i have always been.
+    </div>
+    <br>
+
+    <div id="Journey">
+        <div class="row text-center">
+            <div class="col-12">
+                <a name="Journey">
+                    <h3>Journey</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <br>
+    <br>
+    <!--Education journey table-->
+    <div class="row text-center">
+        <div class="col-md-12" style="overflow: auto;">
+            <table class="tableOne">
+                <tr>
+                    <th> </th>
+                    <th>Level</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                    <th>County</th>
+                </tr>
+                <tr>
+                    <td><b>KinderGarden </b></td>
+                    <td> </td>
+                    <td> Sagam Pri. </td>
+                    <td> 2004</td>
+                    <td> Siaya </td>
+                </tr>
+                <tr>
+                    <td> <b> Primary </b> </td>
+                    <td>1-2</td>
+                    <td>Ngere Pri.</td>
+                    <td>2005-2006</td>
+                    <td>Kisumu </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>3</td>
+                    <td>St.Georges Pri.</td>
+                    <td>2007</td>
+                    <td>Kisumu</td>
+
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>4-5</td>
+                    <td>Rabuor Pri. </td>
+                    <td>2008-2009</td>
+                    <td>Kisumu</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>6-8</td>
+                    <td>St.Luke Rabuor</td>
+                    <td>2010-2012</td>
+                    <td>Kisumu</td>
+                </tr>
+                <tr>
+                    <td><b>Secondary</b></td>
+                    <td>1-4</td>
+                    <td>Kakamega School</td>
+                    <td>2013-2016</td>
+                    <td>Kakamega</td>
+                </tr>
+                <tr>
+                    <td><b>College</b></td>
+                    <td>1-ongoing</td>
+                    <td>Egerton University(Njoro) </td>
+                    <td>2017-</td>
+                    <td>Nakuru </td>
+                </tr>
+
+            </table>
+        </div>
+
+    </div>
+    <br>
+    <br>
+    <!--        Subtopic --Projects-- -->
+
+    <div id="Projects">
+        <div class="row text-center">
+            <div class="col-12">
+                <a name="Projects">
+                    <h3>College Projects</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row text-center">
+        <div class="col-12">
+            <div class="paragraphInProjects">
+                <p>Below are links to some of the projects that i have managed to do using different programming languages that am familiar with; ranging from C,Java,SQl among others </p>
+
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!--        Cards to my projects-->
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card">
+                <img class="card-img-top" src="images/cart.png">
+                <div class="card-body">
+                    <!--                        <a class="btn btn-outline-secondary" href="#"><h6>Online Mall</h6></a>-->
+                    <h6><b>Online Mall</b></h6>
+                    <p class="cardTexts">An online-shopping platform (desktop App) with display functionality in Javafx to display products directly from a database(inventory). </p>
+                    <a class="btn btn-outline-info" href="https://github.com/Xavier-Frank/Online_Shop-sample">See Project</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img class="card-img-top" src="images/article_16_3-27-201911-28-56AM.png">
+                <div class="card-body">
+                    <!--                        <a class="btn btn-outline-secondary"><h6>Database</h6></a>-->
+                    <h6><b>Database</b></h6>
+                    <p class="cardTexts">A .sql sheet with orderly structured SQl commands of an institution's database that can be engineered(reverse or forward) to produce table entities and relations.</p>
+                    <a class="btn btn-outline-info" href="https://github.com/Xavier-Frank/SQl-DB-project">See Project</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card">
+                <img class="card-img-top" src="images/Books-2-icon.png">
+                <div class="card-body">
+                    <!--                        <a class="btn btn-outline-secondary"><h6>Library System</h6></a>-->
+                    <h6><b>Library System</b></h6>
+                    <p class="cardTexts">This is a simplified library system in C ; that imitates real library functions. </p>
+                    <a class="btn btn-outline-info " href="https://github.com/Xavier-Frank/Library_system_in_C">See project</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card">
+                <img class="card-img-top" src="images/shirt3.jpeg">
+                <div class="card-body">
+                    <!--                        <a class="btn btn-outline-secondary"><h6>Library System</h6></a>-->
+                    <h6><b>Photo Gallery</b></h6>
+                    <p class="cardTexts">Web Based photo gallery to display photos with transition effects between photos and transformation effects</p>
+                    <a class="btn btn-outline-info" href="https://github.com/Xavier-Frank/gallery/">See project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <!--        Remember to add animations for redirections i.e click to see other projects-->
+    <div class="row text-center">
+        <div class="col-12">
+            <h5>See other projects </h5>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="card github">
+            <!--                    Remember to add a github icon as the image icon-->
+            <a href="https://github.com/Xavier-Frank/"><img src="images/GitHub-Mark.png" class="card-img-top"></a>
+            <div class="card-body">
+                <a class="btn btn-outline-info" href="https://github.com/Xavier-Frank/">Github</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--      Third topic --Extras-- -->
+    <hr>
+    <div id="Extras">
+        <div class="row text-center">
+            <div class="col-12">
+                <a name="Extras">
+                    <h2 class="title">Extras</h2>
+                    <p>Favourites</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <br>
+
+    <!--        Coding-->
+    <div class="row text-center">
+        <div class="col-12">
+            <i class="gif-titles">i. Coding</i>
+            <img class="gif" src="images/giphy.gif" alt="coding gif">
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <p class="paragraphInProjects"><b><i>"The only way to learn a new programming language is by writing programs in it." </i></b>~ <i>Denis Ritchie</i></p>
+    <p class="paragraphInProjects">Owing to that fact, coding is becoming one of my norms because with every sunrise and sunset,not only do I grow my skills in Java(My favourite Language) but also strive to learn other languages(Python,Spring & SpringBoot,etc.)by writing programs in
+        them. </p>
+    <br>
+    <!--        football-->
+    <div class="row text-center">
+        <div class="col-12">
+            <i class="gif-titles">ii. Soccer</i>
+            <img class="gif" src="images/football.gif" alt="football gif">
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <p class="paragraphInProjects">I have always loved soccer and everything associated with it,you know:watching,cheering,playing and taking on challenges.But being from a "paper country" (as many refer to Kenya) where education matters that most supposedly,football has never been
+        my top priorities and that's why i never took it seriously having gone through one of the football "epi centers" in the country ~ Kakamega School. I always find time to play soccer because being on the pitch makes me feel alive and relaxed.Furthermore,participating
+        in any sport requires discipline and certain principles.
+    </p>
+    <br>
+    <br>
+    <!-- Exploration -->
+    <div class="row text-center">
+        <div class="col-12">
+            <i class="gif-titles">iii.Exploration</i>
+            <img class="gif" src="images/exploration.gif" alt="Expolration gif">
+        </div>
+    </div>
+    <br>
+    <br>
+    <p class="paragraphInProjects">Somebody once said:<i><b>"Success is an act of exporation.That means the first thing you have to find is the unknown.Learning is searching;anything else is just waiting."</i></b> I have always loved to know more about things and people, particularly
+        those gain my interest just to quench "inborn thirst".Exploration has always given me a sense satisfaction and a peace of mind. </p>
+
+    <!-- Fourth topic  --Career-- -->
+    <hr>
+
+    <div id="Career">
+        <div class="row text-center">
+            <div class="col-12">
+                <a name="Career">
+                    <h2 class="title"> Career</h2>
+                </a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <br>
+
+    <div class="row text-center">
+        <div class="col-12">
+            <img class="gif" src="images/coming_soon.gif">
+        </div>
+    </div>
+
+    <br>
+
+    <!-- Fifth topic --Family-- -->
+    <hr>
+
+    <div id="Family">
+        <div class="row text-center">
+            <div class="col-12">
+                <a name="Family">
+                    <h2 class="title"> Family</h2>
+                </a>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <br>
+    <br>
+    <p class="paragraphInProjects"> <b>"Having Somewhere to go is home.Having someone to love is family.And having both is a blessing".</b></p>
+    <p>Considering the above quote am blessed with somewhere to call home and friends who are always there for me.What more can I say, I will always pray for them and wish them well in everything they do.</p>
+
+    <footer>
+        <div class="jumbotron jumbotronbg" style="margin-bottom:0px">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h4 class="jumbotron-text">Connect With Me</h4>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card social-media card_one">
+                        <div class="card-body">
+                            <h5><i class="footer-subtopics">Social Media</i></h5>
+                            <br>
+                            <a class="instagram" href="https://www.instagram.com/xavierfrank_o/?hl=en"><img src="images/instagram.jpeg"></a>
+                            <a class="facebook" href="https://web.facebook.com/francis.oduor.92"><img src="images/facebook.png"></a>
+                            <a class="twitter" href="https://twitter.com/OduorXavier"><img src="images/twitter.png"></a>
+                            <a class="linkedIn" href="https://www.linkedin.com/in/xavier-oduor-210400197/"><img src="images/linkedin.png"></a>
+                            <a class="github" href="https://github.com/Xavier-Frank/"><img src="images/GitHub-Mark.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card card_two">
+                        <div class="card-body">
+                            <h5><i class="footer-subtopics">Mail</i></h5>
+                            <table class="tableTwo">
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <td class="email"> <img id="gmailicon" src="images/gmailicon.png"></td>
+                                    <td>
+                                        <!-- Inut field for copy -->
+                                        <input type="text" value="oduorfrancis134@gmail.com" id="copyGmailAddress" class="textFieldBg">
+                                        <button onclick="CopyGmailAdrress()" class="copybutton">Copy</button>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="email"> <img id="hotmailicon" src="images/hotmail-icon.png"></td>
+                                    <td>
+                                        <!-- input field for copy -->
+                                        <input type="text" value="xavierfrancis254@hotmail.com" id="hotmailaddrress" class=" textFieldBg">
+                                        <button onclick="copyHotMailText()" class="copybutton">Copy</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-12 copyright">
+                    <p>&#169 2020 designed by Xavier Oduor</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
